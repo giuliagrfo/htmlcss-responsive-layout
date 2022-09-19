@@ -125,6 +125,8 @@ section {
     aspect-ratio: 1 / 1;
     flex-shrink: 0;
 }
+
+
 /* #endregion DEBUG */
 
 
@@ -143,13 +145,14 @@ nav {
 /* #endregion HEADER */
 
 
+
 /* #region MAIN */
 
 .demo [class^="col_"] {
     background-color: var(--secondary-soft);
 }
 
-.planning, .benefits {
+.planning, .benefits, .banner {
     background-color: var(--primary);
 }
 
@@ -164,11 +167,18 @@ nav {
 .benefits [class^="col_"] {
     background-color: white;
 }
-
-
-
-
 /* #endregion MAIN */
+
+
+
+
+/* #region FOOTER */
+
+
+
+/* #endregion FOOTER */
+
+
 
 
 /* #region RESPONSIVE */

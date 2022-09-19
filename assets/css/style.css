@@ -16,3 +16,43 @@
     --light: #fffefe;
 }
  
+
+/* #region UTILITIES */
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+/* #endregion UTILITIES */
+
+
+/* #region DEBUG */
+
+.debug .logo {
+    height: 50px;
+    width: 150px;
+    border: 1px solid black;
+}
+
+.debug .menu {
+    height: 50px;
+    width: 450px;
+    border: 1px solid black;
+
+}
+/* #endregion DEBUG */
+
+
+
+/* #region HEADER */
+
+header {
+    background-color: var(--secondary);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+/* #endregion HEADER */

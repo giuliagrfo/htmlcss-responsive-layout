@@ -32,6 +32,10 @@
 section {
     padding: 2rem 0;
 }
+
+[class^="col_"] {
+    padding: 0 1rem;
+}
 /* #region COLUMN */
 .col_1 {
     width: calc(100% / 12 *1);
@@ -83,7 +87,6 @@ section {
 
 /* #endregion COLUMN */
 
-
 /* #endregion UTILITIES */
 
 
@@ -134,17 +137,23 @@ nav {
     background-color: var(--secondary-soft);
 }
 
-.planning {
+.planning, .benefits {
     background-color: var(--primary);
 }
 
-.partners .title {
+.partners .title, .benefits .title {
     margin-bottom: 1rem;
 }
 
 .partners [class^="col_"] {
     background-color: var(--primary);
 }
+
+.benefits [class^="col_"] {
+    background-color: white;
+}
+
+
 
 
 /* #endregion MAIN */

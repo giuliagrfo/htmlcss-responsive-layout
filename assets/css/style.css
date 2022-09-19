@@ -27,6 +27,11 @@
     margin: 0 auto;
 }
 
+.container_small {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -256,17 +261,75 @@ nav a {
     color: white;
 }
 
-.clean_code {
+.clean_code, .development {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.clean_code p {
+.clean_code p, .development p {
     text-align: center;
     padding-bottom: 2rem;
 }
+
+.row_planning {
+    align-items: flex-end;
+}
+
+.card_planning {
+    color: white;
+}
+
+.card_planning img {
+    padding: 1rem;
+}
+
+.card_planning h3 {
+    margin-top: 5rem;
+}
+
+.card_planning p {
+    margin-top: 3rem;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.development {
+    background-color: white;
+    border-radius: 40px;
+    padding: 0 0.5rem;
+    margin: 0 2rem;
+}
+
+.development img {
+    width: 40%;
+}
+
+.development h4 {
+    color: var(--darker);
+}
+
+.development p {
+    font-style: italic;
+    padding: 1rem;
+}
+
+.arrow {
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    margin: 2rem 0;
+}
+
+.arrow i {
+    color: var(--darker);
+    font-size: 20px;
+    padding-top: 0;
+}  
 
 .planning, .benefits, .banner {
     background-color: var(--primary);

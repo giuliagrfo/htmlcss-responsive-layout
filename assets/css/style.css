@@ -126,6 +126,11 @@ section {
     flex-shrink: 0;
 }
 
+.debug .banner .container {
+    background-color: blue;
+    height: 300px;
+}
+
 
 /* #endregion DEBUG */
 

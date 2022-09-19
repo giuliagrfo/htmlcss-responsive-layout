@@ -131,6 +131,9 @@ section {
     height: 300px;
 }
 
+.debug footer {
+    height: 300px;
+}
 
 /* #endregion DEBUG */
 
@@ -179,7 +182,9 @@ nav {
 
 /* #region FOOTER */
 
-
+footer {
+    background-color: var(--dark);
+}
 
 /* #endregion FOOTER */
 

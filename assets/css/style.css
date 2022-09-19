@@ -43,7 +43,7 @@ section {
 }
 
 [class^="col_"] {
-    padding: 0 1rem;
+    padding: 0.5rem 0.5rem;
 }
 
 img {
@@ -218,11 +218,11 @@ nav a {
 .card h4 {
     color: var(--secondary);
     padding-top: 2rem;
-    padding-left: 1rem;
+    font-size: 20px;
 }
 
 .card p {
-    padding: 1rem 1rem;
+    padding: 1.5rem 0.5rem;
     color: var(--dark);
     line-height: 1.5rem;
     font-size: 14px;
@@ -237,9 +237,13 @@ nav a {
 }
 
 .card i {
-    font-size: 80px;
+    font-size: 60px;
     padding-top: 2rem;
     color: var(--secondary);
+}
+
+.get_demo h4, .get_demo p {
+    padding-left: 1rem;
 }
 
 .card .app_store {
@@ -261,6 +265,7 @@ nav a {
 
 .clean_code p {
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .planning, .benefits, .banner {

@@ -105,6 +105,11 @@ section {
     height: 300px;
     border: 1px solid black;
 }
+
+.debug .title {
+    height: 100px;
+    border: 1px solid red;
+}
 /* #endregion DEBUG */
 
 
@@ -122,6 +127,27 @@ nav {
 }
 /* #endregion HEADER */
 
+
+/* #region MAIN */
+
+.demo [class^="col_"] {
+    background-color: var(--secondary-soft);
+}
+
+.planning {
+    background-color: var(--primary);
+}
+
+.partners .title {
+    margin-bottom: 1rem;
+}
+
+.partners [class^="col_"] {
+    background-color: var(--primary);
+}
+
+
+/* #endregion MAIN */
 
 
 /* #region RESPONSIVE */

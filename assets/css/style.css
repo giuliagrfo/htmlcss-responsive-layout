@@ -213,9 +213,9 @@ nav a {
 }
 
 .card img {
-    width: 40%;
+    width: 35%;
     float: right;
-    padding-top: 3rem;
+    padding-top: 3.2rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -227,7 +227,7 @@ nav a {
 }
 
 .card p {
-    padding: 1.5rem 0.5rem;
+    padding: 1rem 0.5rem;
     color: var(--dark);
     line-height: 1.5rem;
     font-size: 14px;
@@ -243,7 +243,7 @@ nav a {
 
 .card i {
     font-size: 60px;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     color: var(--secondary);
 }
 
@@ -261,16 +261,16 @@ nav a {
     color: white;
 }
 
-.clean_code, .development {
+.cd_small, .development {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.clean_code p, .development p {
+.cd_small p, .development p {
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .row_planning {
@@ -420,6 +420,53 @@ footer {
 
     .menu i {
         display: block;
+    }
+
+    .container {
+        width: 85%;
+    }
+     
+    .get_demo {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        text-align: start;
+    }
+    
+    .info {
+        padding: 0 1rem;
+    }
+    .card img {
+        width: 80%;
+    }
+
+    .cd_small p {
+        padding: 1rem 0.8rem;
+    }
+
+    .container_small {
+        width: 80%;
+    }
+
+    .card_planning h3 {
+        font-size: 35px;
+    }
+
+    .card_planning p {
+        font-size: 16px;
+        padding-bottom: 1rem;
+    }
+
+    .development {
+        padding: 0;
+        margin: 0;
+    }
+
+    .partners .title p {
+        line-height: 25px;
+        font-size: 16px;
     }
 }
 

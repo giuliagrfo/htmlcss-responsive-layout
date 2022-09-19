@@ -29,6 +29,9 @@
     flex-wrap: wrap;
 }
 
+section {
+    padding: 2rem 0;
+}
 /* #region COLUMN */
 .col_1 {
     width: calc(100% / 12 *1);
@@ -80,6 +83,7 @@
 
 /* #endregion COLUMN */
 
+
 /* #endregion UTILITIES */
 
 
@@ -98,7 +102,7 @@
 }
 
 .debug [class^="col_"] {
-    height: 200px;
+    height: 300px;
     border: 1px solid black;
 }
 /* #endregion DEBUG */

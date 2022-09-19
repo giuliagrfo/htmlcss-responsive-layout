@@ -119,12 +119,12 @@ img {
 
 .debug .menu {
     height: 50px;
-    width: 450px;
+    width: 500px;
     border: 1px solid black;
 }
 
 .debug [class^="col_"] {
-    height: 300px;
+    height: 350px;
     border: 1px solid black;
 }
 
@@ -330,6 +330,55 @@ nav a {
     font-size: 20px;
     padding-top: 0;
 }  
+
+.partners {
+    text-align: center;
+}
+
+.partners span {
+    font-size: 12px;
+}
+
+.partners .title h2 {
+    padding: 1rem 0;
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.partners p {
+    font-size: 14px;
+    padding: 0 2rem;
+}
+
+.testimonial {
+    background-color: var(--primary);
+    border-radius: 20px;
+    padding: 1rem 0.5rem;
+    margin: 1rem 0;
+}
+
+.testimonial img {
+    float: left;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.testimonial p  {
+    text-align: start;
+    padding: 1.5rem 0;
+    color: white;
+    line-height: 25px;
+}
+
+.testimonial_name {
+    text-align: start;
+    color: white;
+    font-size: 14px;
+}
 
 .planning, .benefits, .banner {
     background-color: var(--primary);

@@ -113,6 +113,18 @@ section {
     height: 100px;
     border: 1px solid red;
 }
+
+.debug .testimonial {
+    height: 100px;
+    border: 1px solid black;
+}
+
+.debug .partners .picture {
+    background-color: blue;
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+}
 /* #endregion DEBUG */
 
 

@@ -210,7 +210,7 @@ nav a {
 .card img {
     width: 40%;
     float: right;
-    padding-top: 4rem;
+    padding-top: 3rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -221,15 +221,11 @@ nav a {
     padding-left: 1rem;
 }
 
-.card p, .app_store {
-    padding: 1rem 1rem;
-    
-}
-
 .card p {
-    padding-bottom: 2rem;
-    font-size: 14px;
+    padding: 1rem 1rem;
     color: var(--dark);
+    line-height: 1.5rem;
+    font-size: 14px;
 }
 
 .card a {
@@ -237,9 +233,35 @@ nav a {
     color: white;
     background-color: var(--secondary);
     border-radius: 20px;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3rem;
 }
 
+.card i {
+    font-size: 80px;
+    padding-top: 2rem;
+    color: var(--secondary);
+}
+
+.card .app_store {
+    margin-left: 1rem;
+}
+
+.card .app_store i {
+    font-size: 20px;
+    padding-right: 0.5rem;
+    color: white;
+}
+
+.clean_code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clean_code p {
+    text-align: center;
+}
 
 .planning, .benefits, .banner {
     background-color: var(--primary);

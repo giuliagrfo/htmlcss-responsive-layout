@@ -603,7 +603,7 @@ footer a {
         margin: 0 auto;
     }
 
-    
+    /* #region DEMO */
     .card {
         text-align: start;
     }
@@ -626,8 +626,9 @@ footer a {
         line-height: 30px;
         font-weight: bold;
     }
-    /* end demo */
+    /* #endregion DEMO */
 
+    /* #region PLANNING */
     .card_planning h3 {
         font-size: 30px;
     }
@@ -655,7 +656,9 @@ footer a {
         font-size: 18px;
         line-height: 25px;
     }
-    
+    /* #endregion PLANNING */
+
+    /* #region PARTNERS */
     .title {
         padding: 2rem 0;
     }
@@ -686,11 +689,15 @@ footer a {
     .testimonial img {
         margin: 0;
     }
+    /* #endregion PARTNERS */
 
+    /* #region BENEFITS */
     .heading_bnf h2{
         font-size: 30px;
     }
+    /* #endregion BENEFITS */
 
+    /* #region BANNER */
     .banner h3 {
         font-size: 30px;
         padding-top: 1rem
@@ -699,10 +706,13 @@ footer a {
     .banner p {
         padding: 1rem 1rem;
     }
+    /* #endregion BANNER */
 
+    /* #region FOOTER */
     footer p {
         padding: 1rem 1rem;
     }
+    /* #endregion FOOTER */
 }
 
 
@@ -734,7 +744,7 @@ footer a {
         max-width: 700px;
         margin: 0 auto;
     }
-
+    /* #region DEMO */
     .card {
         text-align: start;
     }
@@ -746,7 +756,9 @@ footer a {
     .card img {
         width: 40%;
     }
+    /* #endregion DEMO */
 
+    /* #region PLANNING*/
     .card_planning h3 {
         font-size: 60px;
     }
@@ -758,7 +770,9 @@ footer a {
     .development img {
         width: 70%;
     }
-    
+    /* #endregion PLANNING*/
+
+    /* #region PARTNERS*/
     .partners .notehead {
         font-size: 20px;
     }
@@ -766,11 +780,13 @@ footer a {
     .partners .title h2 {
         font-size: 40px;
     }
+    /* #endregion PARTNERS*/
 
+    /* #region BENEFITS*/
     .heading_bnf h2 {
         font-size: 40px;
     }
-
+    /* #endregion BENEFITS*/
 }
 
 
@@ -791,6 +807,9 @@ footer a {
     .container_small {
         max-width: 1160px;
     }
+
+    /* #region DEMO */
+
     .card img {
         width: 40%;
     }
@@ -798,7 +817,9 @@ footer a {
     .clean_code {
         height: 100%;
     }
+    /* #endregion DEMO */
 
+    /* #region PLANNING*/
     .title {
         padding: 2rem 0;
     }
@@ -806,7 +827,9 @@ footer a {
     .development img {
         width: 70%;
     }
+    /* #endregion PLANNING*/
 
+    /* #region PARTNERS*/
     .partners .title h2 {
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -834,11 +857,15 @@ footer a {
         font-size: 20px;
         font-weight: 700;
     }
+    /* #endregion PARTNERS*/
 
+    /* #region ABOUT*/
     .about_us p {
         font-size: 18px;
         line-height: 40px;
     }
+    /* #endregion ABOUT*/
+
 }
 
 

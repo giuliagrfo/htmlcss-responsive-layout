@@ -11,7 +11,7 @@
     --secondary: #0084fd;
     --secondary-soft: #b4ddfe;
     --accent: #fdc15f;
-    --dark: #606060;
+    --dark: #292929;
     --darker: #000;
     --light: #fffefe;
     
@@ -559,14 +559,24 @@ nav a {
 /* #endregion MAIN */
 
 
-
-
 /* #region FOOTER */
 
 footer {
     background-color: var(--dark);
+    text-align: center;
+    padding: 3rem 0;
+    color: rgb(212, 212, 212);
 }
 
+footer p {
+    padding: 0 3rem;
+    margin-bottom: 2rem;
+}
+
+footer a {
+    color: var(--primary);
+    text-decoration: underline;
+}
 /* #endregion FOOTER */
 
 

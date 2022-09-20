@@ -16,9 +16,10 @@
     --light: #fffefe;
     
 }
- body {
+
+body {
     font-family: 'PT Sans', sans-serif;
- }
+}
 
 /* #region UTILITIES */
 
@@ -208,6 +209,7 @@ nav a {
 
 /* #region MAIN */
 
+/* #region DEMO */
 .demo .card {
     background-color: var(--secondary-soft);
     border-radius: 15px;
@@ -215,24 +217,12 @@ nav a {
 
 .card img {
     width: 35%;
-    /* float: right;
-    padding-top: 3rem;
-    margin-left: 2rem;
-    margin-right: 2rem; */
 }
 
 .card h4 {
     color: var(--secondary);
     padding-top: 2rem;
     font-size: 20px;
-}
-
-.demo .card p, .info_benefits p {
-    padding: 1rem 1rem;
-    color: var(--dark);
-    line-height: 1.5rem;
-    font-size: 14px;
-    font-weight: bold;
 }
 
 .card a {
@@ -246,6 +236,14 @@ nav a {
     font-size: 60px;
     padding-top: 1.5rem;
     color: var(--secondary);
+}
+
+.demo .card p, .info_benefits p {
+    padding: 1rem 1rem;
+    color: var(--dark);
+    line-height: 1.5rem;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .get_demo {
@@ -282,6 +280,9 @@ nav a {
     padding-bottom: 1rem;
 }
 
+/* #endregion DEMO */
+
+/* #region PLANNING */
 .row_planning {
     align-items: flex-end;
 }
@@ -341,6 +342,14 @@ nav a {
     padding-top: 0;
 }  
 
+/* #endregion PLANNING */
+
+/* #region PARTNERS */
+
+.partners [class^="col_"] {
+    background-color: var(--primary);
+}
+
 .partners {
     text-align: center;
 }
@@ -397,10 +406,9 @@ nav a {
     margin-bottom: 1rem;
 }
 
-.partners [class^="col_"] {
-    background-color: var(--primary);
-}
+/* #endregion PARTNERS */
 
+/* #region BENEFITS */
 .benefits [class^="col_"] {
     background-color: white;
 }
@@ -420,6 +428,7 @@ nav a {
     padding-bottom: 3rem;
     padding-left: 1rem;
 }
+
 .info_benefits h2 {
     color: var(--primary);
     font-size: 70px;
@@ -443,7 +452,9 @@ nav a {
     border-radius: 20px;
 }
 
+/* #endregion BENEFITS */
 
+/* #region ABOUT */
 .about_us h2 {
     color: var(--primary);
     font-size: 60px;
@@ -460,7 +471,6 @@ nav a {
     flex-direction: column;
     margin-left: 3rem;
     position: relative;
-
 }
 
 .avatar img {
@@ -498,6 +508,9 @@ nav a {
     border-radius: 20px;
 }
 
+/* #endregion ABOUT */
+
+/* #region BANNER */
 .banner {
     text-align: center;
 }
@@ -523,15 +536,15 @@ nav a {
     margin-bottom: 2rem;
 }
 
+.start_btn {
+    margin-bottom: 3rem;
+}
+
 .start_btn a {
     background-color: white;
     color: var(--primary);
     padding: 1.5rem 5rem;
     border-radius: 50px;
-}
-
-.start_btn {
-    margin-bottom: 3rem;
 }
 
 .copyright {
@@ -548,6 +561,8 @@ nav a {
     align-self: center;
     padding: 0 0.5rem;
 }
+/* #endregion BANNER */
+
 /* #endregion MAIN */
 
 
@@ -588,6 +603,7 @@ footer a {
         margin: 0 auto;
     }
 
+    
     .card {
         text-align: start;
     }
@@ -610,6 +626,7 @@ footer a {
         line-height: 30px;
         font-weight: bold;
     }
+    /* end demo */
 
     .card_planning h3 {
         font-size: 30px;
@@ -718,20 +735,16 @@ footer a {
         margin: 0 auto;
     }
 
+    .card {
+        text-align: start;
+    }
+
     .clean_code {
         height: 100%;
     }
 
     .card img {
         width: 40%;
-    }
- 
-    .card {
-        text-align: start;
-    }
-    
-    .info {
-        padding: 0 1rem;
     }
 
     .card_planning h3 {
@@ -757,11 +770,27 @@ footer a {
     .heading_bnf h2 {
         font-size: 40px;
     }
+
 }
 
 
-@media screen and (min-width: 1200px) {
 
+@media screen and (min-width: 1200px) {
+    .col_lg_6 {
+        width: 50%;
+    }
+    
+    .col_lg_4 {
+        width: calc(100% /12 *4);
+    }
+    
+    .col_lg_8 {
+        width: calc(100% / 12 *8);
+    }
+
+    .container_small {
+        max-width: 1160px;
+    }
     .card img {
         width: 40%;
     }
@@ -810,18 +839,6 @@ footer a {
         font-size: 18px;
         line-height: 40px;
     }
-    .col_lg_6 {
-        width: 50%;
-    }
-    
-    .col_lg_4 {
-        width: calc(100% /12 *4);
-    }
-
-    .col_lg_8 {
-        width: calc(100% / 12 *8);
-    }
-   
 }
 
 

@@ -11,24 +11,24 @@
     --secondary: #0084fd;
     --secondary-soft: #b4ddfe;
     --accent: #fdc15f;
-    --dark: #323332;
+    --dark: #606060;
     --darker: #000;
     --light: #fffefe;
     
 }
  body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'PT Sans', sans-serif;
  }
 
 /* #region UTILITIES */
 
 .container {
-    width: 70%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
 .container_small {
-    width: 60%;
+    max-width: 60%;
     margin: 0 auto;
 }
 
@@ -48,11 +48,16 @@ section {
 }
 
 [class^="col_"] {
-    padding: 0.5rem 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
 }
 
 img {
     max-width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* #region COLUMN */
@@ -176,7 +181,6 @@ nav li {
 }
 
 nav a {
-    text-decoration: none;
     padding: 0 0.5rem;
     color: white;
 }
@@ -215,7 +219,7 @@ nav a {
 .card img {
     width: 35%;
     float: right;
-    padding-top: 3.2rem;
+    padding-top: 3rem;
     margin-left: 2rem;
     margin-right: 2rem;
 }
@@ -226,15 +230,15 @@ nav a {
     font-size: 20px;
 }
 
-.card p {
-    padding: 1rem 0.5rem;
+.demo .card p, .info_benefits p {
+    padding: 1rem 1rem;
     color: var(--dark);
     line-height: 1.5rem;
     font-size: 14px;
+    font-weight: bold;
 }
 
 .card a {
-    text-decoration: none;
     color: white;
     background-color: var(--secondary);
     border-radius: 20px;
@@ -247,11 +251,11 @@ nav a {
     color: var(--secondary);
 }
 
-.get_demo h4, .get_demo p {
+.get_demo h4, .info_benefits h2, .info_benefits h4 {
     padding-left: 1rem;
 }
 
-.card .app_store {
+.card .app_store, .info_benefits .more_btn {
     margin-left: 1rem;
 }
 
@@ -271,6 +275,10 @@ nav a {
 .cd_small p, .development p {
     text-align: center;
     padding-bottom: 1rem;
+}
+
+.clean_code, .branding {
+    padding-right: 0;
 }
 
 .row_planning {
@@ -311,6 +319,7 @@ nav a {
 }
 
 .development p {
+    font-size: 14px;
     font-style: italic;
     padding: 1rem;
 }
@@ -384,7 +393,7 @@ nav a {
     background-color: var(--primary);
 }
 
-.partners .title, .benefits .title {
+.partners .title, .benefits .heading_bnf {
     margin-bottom: 1rem;
 }
 
@@ -394,6 +403,54 @@ nav a {
 
 .benefits [class^="col_"] {
     background-color: white;
+}
+
+.heading_bnf h2 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.benefit {
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+
+.info_benefits {
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+}
+.info_benefits h2 {
+    color: var(--primary);
+    font-size: 70px;
+}
+
+.info_benefits h4 {
+    color: var(--primary);
+    font-size: 22px;
+}
+
+.info_benefits p {
+    color: #a1a1a1;
+    font-weight: 500;
+    padding: 2rem 1rem;
+}
+
+.more_btn a{
+    background-color: var(--primary);
+    color: white;
+    padding: 0.5rem 3rem;
+    border-radius: 20px;
+}
+
+.about_us h2 {
+    color: var(--primary);
+    font-size: 60px;
+}
+
+.about_us p {
+    line-height: 30px;
+    padding: 1rem 0;
 }
 /* #endregion MAIN */
 
@@ -413,17 +470,10 @@ footer {
 
 /* #region RESPONSIVE */
 
-@media screen and (max-width: 480px) {
-    nav ul li {
-        display: none;
-    }
-
-    .menu i {
-        display: block;
-    }
+@media screen and (max-width: 768px) {
 
     .container {
-        width: 85%;
+        max-width: 70%;
     }
      
     .get_demo {
@@ -442,8 +492,10 @@ footer {
         width: 80%;
     }
 
-    .cd_small p {
-        padding: 1rem 0.8rem;
+    .demo .cd_small p {
+        padding: 1rem 3rem;
+        line-height: 30px;
+        font-weight: bold;
     }
 
     .container_small {
@@ -464,21 +516,53 @@ footer {
         margin: 0;
     }
 
+    .development h4 {
+        font-size: 25px;
+    }
+    
+    .development p {
+        padding: 1rem 1rem;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .title {
+        padding: 2rem 0;
+    }
+
+    .partners .title h2 {
+        padding-top: 2rem;
+    }
+    .partners .notehead {
+        font-size: 20px;
+    }
+
     .partners .title p {
         line-height: 25px;
         font-size: 16px;
     }
-}
 
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bio p, .testimonial_name {
+        text-align: center;
+    }
+    
+    .testimonial img {
+        margin: 0;
+    }
+
+    .planning h3 {
+        font-size: 70px;
+    }
+}
+/* 
 @media screen and (min-width: 480px) and (max-width: 1200px) {
-    nav ul li {
-        display: none;
-    }
-
-    .menu i {
-        display: block;
-    }
-}
+   
+} */
 
 @media screen and (min-width: 768px) {
  
@@ -494,7 +578,50 @@ footer {
         width: calc(100% / 12 *8);
     }
 
+    .container {
+        max-width: 720px;
+    }
+
+    .container_small {
+        max-width: 720px;
+    }
+
+    .card img {
+        width: 60%;
+    }
+
+    .code {
+        padding-bottom: 30%;
+    }
+
+    .get_demo {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .card {
+        text-align: start;
+    }
+    
+    .info {
+        padding: 0 1rem;
+    }
+
+  
+
+    .development {
+        margin-top: 1rem;
+    }
+
+    .development img {
+        width: 70%;
+    }
+
+    .heading_bnf h2 {
+        font-size: 40px;
+    }
 }
+
 
 @media screen and (min-width: 1200px) {
     .col_lg_6 {
@@ -504,6 +631,18 @@ footer {
     .col_lg_4 {
         width: calc(100% /12 *4);
     }
+
+   
 }
 
+
+@media screen and (max-width: 1200px) {
+    nav ul li {
+        display: none;
+    }
+
+    .menu i {
+        display: block;
+    }
+}
 /* #endregion RESPONSIVE */
